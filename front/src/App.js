@@ -12,11 +12,12 @@ class App extends Component {
   }
 
   render() {
-    const getDataFromServer = () => {
-      fetch('http://localhost:8080/greeting')
-          .then((response) => {
-            console.log(response);
-          });
+    const getDataFromServer = async () => {
+      const response = await fetch('http://localhost:3000/greeting');
+      const text = await response.text();
+      this.setState({
+          response: text
+      });
     };
 
     return (
