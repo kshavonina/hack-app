@@ -12,6 +12,7 @@ public class UserController {
     public User addMember(@RequestBody User user) {
         System.out.println(user);
         user.setName(user.getName().toUpperCase());
+        user.setAge(user.getAge() * 2);
         return user;
     }
 

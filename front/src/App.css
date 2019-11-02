@@ -3,14 +3,14 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  width: 200px;
 }
 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -33,4 +33,9 @@
 .send-button:hover {
   background: #00d30d;
   color: black;
+}
+
+.data-block {
+  width: 400px;
+  margin: 20px;
 }
