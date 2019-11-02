@@ -49,12 +49,12 @@ class App extends Component {
                 </h1>
               </div>
               <div className="data-block">
-                <button onClick={requestToGreeting} className="send-button">Press me!</button>
+                <button onClick={requestToGreeting} className="send-button">Send get</button>
                 <h2>Data from server:</h2>
                 {this.state.response1 || '- no data -'}
               </div>
               <div className="data-block">
-                <button onClick={requestToUser} className="send-button">Press me too!</button>
+                <button onClick={requestToUser} className="send-button">Send post "Admin, 45"</button>
                 <h2>Data from server:</h2>
                 {this.state.response2 || '- no data -'}
               </div>
